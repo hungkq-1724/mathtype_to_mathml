@@ -20,6 +20,9 @@ module MathTypeToMathML
       0x0021 => { # Exclamation mark
         mathmode: "<mo>(Char)</mo>"
       },
+      0x2212 => { # -
+        mathmode: "<mo>(Char)</mo>"
+      },
       0x0028 => { # Left parenthesis
         mathmode: "<mo stretchy='false'>(Char)</mo>"
       },
