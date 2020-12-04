@@ -1849,8 +1849,4 @@
     <xsl:template match="char[mt_code_value='0xED16' and variation='textmode']">
         <xsl:text disable-output-escaping="yes">&amp;#x2145;</xsl:text>
     </xsl:template>
-
-
-
-
 </xsl:stylesheet>

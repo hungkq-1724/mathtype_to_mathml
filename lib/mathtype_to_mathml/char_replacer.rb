@@ -13,7 +13,7 @@ module MathTypeToMathML
   class CharReplacer
     UNSUPPORTED = "Unsupported (Char)"
 
-    DEFAULT_TEXTMODE = "(Char)"
+    DEFAULT_TEXTMODE = "<mtext>(Char)</mtext>"
     DEFAULT_MATHMODE = "<mi>(Char)<mi>"
 
     REPLACEMENTS = {
