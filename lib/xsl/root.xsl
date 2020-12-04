@@ -8,10 +8,8 @@
 
     <xsl:template match="tmpl[selector='tmROOT' and variation='tvROOT_SQ']">
       <mroot>
+        <xsl:apply-templates select="slot[1] | pile[1]"/>
         <mn></mn>
-        <mi>
-          <xsl:apply-templates select="slot[1] | pile[1]"/>
-        </mi>
       </mroot>
     </xsl:template>
 
