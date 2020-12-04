@@ -25,9 +25,11 @@
     </xsl:template>
 
     <xsl:template match="char[variation = 'textmode']">
-        <xsl:call-template name="charhex">
-            <xsl:with-param name="mt_code_value" select="mt_code_value/text()" />
-        </xsl:call-template>
+        <mtext>
+            <xsl:call-template name="charhex">
+                <xsl:with-param name="mt_code_value" select="mt_code_value/text()" />
+            </xsl:call-template>
+        </mtext>
     </xsl:template>
 
     <xsl:template match="char[typeface = '2']">
@@ -108,7 +110,7 @@
 
     <!-- SPACE -->
     <xsl:template match="char[mt_code_value='0x0020' and variation='textmode']">
-        <xsl:text disable-output-escaping="yes">&amp;#x00A0;</xsl:text>
+        <mtext><xsl:text disable-output-escaping="yes">&amp;#x00A0;</xsl:text></mtext>
     </xsl:template>
 
     <!-- QUOTATION MARK -->
