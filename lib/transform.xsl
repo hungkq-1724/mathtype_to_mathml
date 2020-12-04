@@ -48,4 +48,5 @@
     <xsl:include href="xsl/matrix.xsl"/>
     <xsl:include href="xsl/long_embellishment.xsl"/>
     <xsl:include href="xsl/long_division.xsl"/>
+    <xsl:include href="xsl/root.xsl"/>
 </xsl:stylesheet>
