@@ -73,19 +73,19 @@ module MathTypeToMathML
       0x0030..0x0039 => { # (range) DIGITS 0-9
         mathmode: "<mn>(Char)</mn>",
         number: "(Char)",
-        textmode: "(Char)"
+        textmode: "<mtext>(Char)</mtext>"
       },
       0x003A..0x003B => { # (range) COLON, SEMICOLON
         mathmode: "<mo>(Char)</mo>",
-        textmode: "(Char)"
+        textmode: "<mtext>(Char)</mtext>"
       },
       0x0041..0x005A => { # range: Basic Latin
         mathmode: "<mi>(Char)</mi>",
-        textmode: "(Char)"
+        textmode: "<mtext>(Char)</mtext>"
       },
       0x0061..0x007A => { # range: Basic Latin
         mathmode: "<mi>(Char)</mi>",
-        textmode: "(Char)"
+        textmode: "<mtext>(Char)</mtext>"
       },
       0x0080..0x009F => { # range: C1 Controls
         mathmode: UNSUPPORTED,
